@@ -85,6 +85,10 @@ nav {
     z-index: 1;
 }
 
+.baggrundfs {
+    display: none;
+}
+
 .baggrundt {
     position: fixed;
     margin-top: -10%;
@@ -94,23 +98,36 @@ nav {
     z-index: 1;
 }
 
+.baggrundts {
+    display: none;
+}
+
 .baggrundi {
     position: fixed;
     top: 26%;
     margin-bottom: 0;
     background-color: #d390a1;
     opacity: 80%;
-    z-index: 0;
+    z-index: 1;
+}
+
+
+.baggrundis {
+    display: none;
 }
 
 .baggrundo {
     position: fixed;
-    margin-top: -75%;
+    margin-top: -8%;
     margin-bottom: 0;
     background-color: #d390a1;
     opacity: 80%;
     z-index: 1;
 }
+/* 
+.baggrundos {
+    display: none;
+} */
 /* Baggrund style slut */
 
 /* Forside Indhold style start */
@@ -350,18 +367,40 @@ footer .socials .some img {
 /* Media til Tablet */
 @media (min-width: 768px) {
 .baggrundf {
+    display: none;
+}
+
+.baggrundfs {
+    position: fixed;
+    display: flex;
+    margin-top: 58%;
     width: 100%;
-    margin-top: 49%;
+    background-color: #d390a1;
+    opacity: 80%;
+    z-index: 1;
 }
 
 .baggrundt {
+    display: none;
+}
+
+.baggrundts {
+    position: fixed;
+    display: flex;
+    margin-top: 73%;
     width: 100%;
-    top: 250px;
+    background-color: #d390a1;
+    opacity: 80%;
+    z-index: 1;
 }
 
 .baggrundi {
-    width: 100%;
-    margin-top: 9%;
+    display: none;
+}
+
+.baggrundis {
+    position: fixed;
+    top: 0%;
 }
 
 /* Media header */

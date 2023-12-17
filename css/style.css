@@ -8,11 +8,11 @@
     font-family: rockwell, serif;
 }
 
-/* Menu style start */
+/* Header style start */
 header {
     position: fixed;
-    display: flex;
     background-color: #d390a1;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,88 +22,99 @@ header {
 }
 
 .logo {
+    width: 100%;
+}
+
+.link {
     width: 25%;
     margin: 5%;
 }
-
-/* Test start */
-#check { /*input-tag, der gør det muligt, at have en burgermenu */
-    display: none;
-}
-
-#menu {
-    position: absolute;
-    top: 7rem;
+    /* Menu style slut */
+    /* Burger Menu Style Start */
+nav {
+    background-color: #d390a1;
     width: 100%;
-    padding: 0 0 0 6.5%;
-    background-color: black;
+    height: auto;
 }
-
-/* 1. LAG I MENUEN */
-.menupunkt {
-    display: inline-block;
-    width: 14.5%;
-}
-
-.menupunkt p, .menupunkt a {
-    font-size: 1rem;
-    color: white;
-    padding: 0 0 0 5px;
-}
-
-/* 2. LAG I MENUEN */
-.undermenu, .underundermenu {
-    display: none;
-}
-
-.undermenupunkt p, .undermenupunkt a {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-    width: 10rem;
-    padding: 5px;
-}
-
-/* 3. LAG I MENUEN */
-.underundermenu {
-    float: left;
-    left: 10rem;
-    top: 0;
-}
-
-.underundermenupunkt p, .underundermenupunkt a {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-    width: 8rem;
-    padding: 5px;
-}
-
-/* Test slut */
 
 .burger {
-    width: 15%;
-    margin: 5%;
+    width: 25%;
 }
-
-.menu {
+  
+#check {
     display: none;
 }
-/* Menu style slut */
-
-/* Indhold style start */
-.baggrund {
+  
+.checkbtn {
+    display: flex;
+    justify-content: right;
+    margin: 5%;
+}
+  
+.sider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    margin-top: 36%;
-    margin-bottom: 10%;
+    width: 100%;
+    height: 50%;
     background-color: #d390a1;
+    text-align: center;
+    left: 100%;
+    top: 25%;
+    transition: all 0.5s;
+}
+
+.sider li {
+    margin: 5%;
+}
+  
+#check:checked ~ ul {
+    left: 0;
+}
+    /* Burger Menu style slut */
+/* Header style slut */
+
+/* Baggrund style start */
+.baggrundf {
+    position: fixed;
+    margin-top: -8%;
+    margin-bottom: 0;
+    background-color: #d390a1;
+    opacity: 80%;
     z-index: 1;
 }
 
+.baggrundt {
+    position: fixed;
+    margin-top: -10%;
+    margin-bottom: 0;
+    background-color: #d390a1;
+    opacity: 80%;
+    z-index: 1;
+}
+
+.baggrundi {
+    position: fixed;
+    top: 26%;
+    margin-bottom: 0;
+    background-color: #d390a1;
+    opacity: 80%;
+    z-index: 0;
+}
+
+.baggrundo {
+    position: fixed;
+    margin-top: -75%;
+    margin-bottom: 0;
+    background-color: #d390a1;
+    opacity: 80%;
+    z-index: 1;
+}
+/* Baggrund style slut */
+
+/* Forside Indhold style start */
 .indhold {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,36 +127,186 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    align-items: center;
+    width: 100%;
     height: auto;
     margin-top: 40%;
-    margin-bottom: 20%;
     z-index: 2;
 }
 
-.tb, .tf {
+.tbf {
     position: relative;
     background-color: #8bafcf;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin: 10%;
+    width: 80%;
     padding: 10%;
+    margin: 10%;
+    height: auto;
 }
 
-.tb h1, .tf h2 {
-    font-size: 90%;
+.tbf h1, .tbf h2 {
+    font-size: 100%;
     padding-bottom: 2%;
 }
 
-.tb p, .tf p {
-    font-size: 70%;
+.tbf p {
+    font-size: 80%;
+}
+/* Forside Indhold style slut */
+/* TrøjborgFri Indhold style start */
+    /* Produkter style start */
+.titelt {
+    background-color: #8bafcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 2%;
 }
 
-/* Indhold style slut */
+.produkter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.oel {
+    width: 50%;
+}
+
+    /* Produkter style slut */
+    /* Forhandlere style start */
+.tbt {
+    position: relative;
+    background-color: #8bafcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 10%;
+    margin: 10%;
+    height: auto;
+}
+
+.tbt h2 {
+    font-size: 100%;
+    padding-bottom: 2%;
+}
+
+.tbt ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 80%;
+}
+
+.tbt a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+    /* Forhandlere style slut */
+/* TrøjborgFri Indhold style slut */
+/* Inspiration Indhold style start */
+.titel {
+    padding-bottom: 10%;
+}
+.titel a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    
+}
+
+.titel img {
+    width: 30%;
+    height: auto;
+}
+
+.tbi {
+    position: relative;
+    background-color: #819f97;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 10%;
+    margin: 10%;
+    height: auto;
+}
+
+.tbi h1, .tbi h2 {
+    font-size: 100%;
+    padding-bottom: 2%;
+}
+
+.tbi h3 {
+    font-size: 90%;
+    padding: 4% 2% 2% 0;
+}
+
+.tbi p {
+    font-size: 80%;
+}
+
+.tbi ul {
+    font-size: 80%;
+}
+
+/* Inspiration Indhold style slut */
+/* Om TrøjborgBryg Indhold style start */
+.info {
+    background-color: #8bafcf;
+    display: flex;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.tbo {
+    position: relative;
+    background-color: #8bafcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 10%;
+    margin: 10%;
+    height: auto;    
+}
+
+.tbo h1, .tbo h2 {
+    font-size: 100%;
+    padding-bottom: 2%;
+}
+
+.tbo p {
+    font-size: 80%;
+}
+
+.artiklerk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.tbo ul {
+    font-size: 80%;
+}
+/* Om TrøjborgBryg Indhold style slut */
 /* Footer style start */
 footer {
     position: absolute;
@@ -154,12 +315,11 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30%;
+    height: 20%;
     z-index: 3;
 }
 
 .socials {
-    /* position: absolute; */
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -177,8 +337,133 @@ footer .socials .some img {
 
 /* Footer style slut */
 
+
 /**************************************** Media ****************************************/
+/* Media til mobil */
+@media (max-width: 767px) {
+    .punkter {
+        display: none;
+    }
+}
+
 
 /* Media til Tablet */
+@media (min-width: 768px) {
+.baggrundf {
+    width: 100%;
+    margin-top: 49%;
+}
+
+.baggrundt {
+    width: 100%;
+    top: 250px;
+}
+
+.baggrundi {
+    width: 100%;
+    margin-top: 9%;
+}
+
+/* Media header */
+.checkbtn { 
+    display: none;
+}
+
+header {
+    height: auto;
+}
+
+.logo {
+    width: 60%;
+}
+
+.punkter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10%;
+    font-size: 130%;
+}
+
+/* Media Forside */
+.artikler {
+    margin-top: 30%;
+}
+
+.tbf {
+    margin: 5%;  
+    padding: 5%;
+}
+
+.tbf h1, .tbf h2 {
+    font-size: 150%;
+}
+
+.tbf p {
+    font-size: 110%;
+}
+
+/* Media TrøjborgFri */
+
+.oel {
+    width: 25%;
+}
+
+.tbt {
+    margin: 5%;  
+    padding: 5%;
+}
+
+.tbt h1, .tbt h2 {
+    font-size: 150%;
+}
+
+.tbt p {
+    font-size: 110%;
+}
+
+/* Media Inspiration */
+.titel {
+    padding-bottom: 5%;
+}
+.tbi {
+    margin: 5%;  
+    padding: 5%;
+}
+
+.tbi h1, .tbi h2 {
+    font-size: 200%;
+}
+
+.tbi p {
+    font-size: 110%;
+}
+
+.tbi h3 {
+    font-size: 120%;
+}
+
+.tbi ul {
+    font-size: 110%;
+}
+
+/* Media Footer */
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.some {
+    width: 20%;
+}
+
+footer {
+    height: 30%;
+}
+}
+
 
 /* Media til Laptop */
+@media (min-width: 1024px) {
+
+}

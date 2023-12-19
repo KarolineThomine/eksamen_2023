@@ -62,7 +62,7 @@ nav {
     background-color: #d390a1;
     text-align: center;
     left: 100%;
-    margin-top: -20;
+    margin-top: 0%;
     transition: all 0.5s;
 }
 
@@ -95,7 +95,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(211, 144, 161, 0.3);
+    background-color: rgba(211, 144, 161, 0.6);
     z-index: 1;
 }
 /* Baggrund style slut */
@@ -227,7 +227,7 @@ nav {
     font-size: 80%;
 }
 
-.tbt a {
+.tbt li {
     display: flex;
     justify-content: center;
     width: 50%;
@@ -251,13 +251,7 @@ nav {
     padding-bottom: 10%;
 }
 
-.titeltra {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0%;
-}
-
-.titel a, .titeltra a {
+.titel a {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -266,7 +260,7 @@ nav {
     height: auto;
 }
 
-.titel img, .titeltra img {
+.titel img {
     width: 30%;
     height: auto;
 }
@@ -335,7 +329,7 @@ display: none;
     position: absolute;
     rotate: 30deg;
     right: -4%;
-    bottom: 89%;
+    bottom: 85%;
     width: 25%;
     z-index: 3;
 }
@@ -496,11 +490,12 @@ header {
 }
 
 .titelt {
-    margin-top: 15% 0 5% 0;
+    margin: 15% 0 5% 0;
 }
 
 .produkter {
-    margin-top: 15% 0 5% 0;
+    margin: 5% 0 5% 0;
+    width: 80%;
 }
 
 .oel {
@@ -561,7 +556,7 @@ header {
 
 .tbit {
     position: relative;
-    background-color: none;
+    background: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -597,7 +592,7 @@ header {
 }
 
 .tbo {
-    margin: 15% 0 5% 0;  
+    margin: 5% 0 5% 0;  
     padding: 5%;
 }
 
@@ -742,6 +737,7 @@ header {
 
 .produkter {
     margin-top: 5%;
+    width: 80%;
 }
 
 .oel {
@@ -780,22 +776,6 @@ header {
     margin-top: 10%;
 }
 
-.titeltra {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0%;
-}
-
-.titeltra a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: auto;
-    padding-bottom: 5%;
-}
-
 .tbi {
     margin: 5% 5% 5% 5%;  
     padding: 5%;
@@ -803,7 +783,7 @@ header {
 
 .tbit {
     position: relative;
-    background-color: none;
+    background: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -815,16 +795,18 @@ header {
     z-index: 3;
 }
 
-.tbi h1, .tbi h2, .tbit h2 {
-    font-size: 200%;
+.tbi h1, .tbi h2, .tbit h1, .tbit h2 {
+    padding: 2% 0 1% 0;
+    font-size: 125%;
+}
+
+.tbi h3, .tbit h3 {
+    padding: 2% 0 1% 0;    
+    font-size: 125%;
 }
 
 .tbi p, .tbit p {
     font-size: 110%;
-}
-
-.tbi h3, .tbit h3 {
-    font-size: 120%;
 }
 
 .tbi ul, .tbit ul {
@@ -837,13 +819,13 @@ header {
 }
 
 .tbo {
-    margin: 5%;  
+    margin: 5% 0 5% 0;  
     padding: 5%;
     width: 60%;
 }
 
 .tbo h1, .tbo h2 {
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .tbo p {
@@ -855,14 +837,32 @@ header {
 }
 
 .info {
-    background-color: #8bafcf;
-    display: flex;
-    width: 110%;
-    margin-bottom: 0;
+background-color: #8bafcf;
+display: flex;
+width: 110%;
+margin-bottom: 0;
 }
 
 .infomobil {
     display: none;
+}
+
+.babyo {
+    position: absolute;
+    rotate: 30deg;
+    right: -4%;
+    bottom: 80%;
+    width: 20%;
+    z-index: 3;
+}
+
+.fjero {
+    position: absolute;
+    rotate: -12deg;
+    right: 95%;
+    bottom: 5%;
+    width: 10%;
+    z-index: 3;
 }
 
 .babyo {

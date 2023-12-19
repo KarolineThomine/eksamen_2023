@@ -7,6 +7,31 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
+<url>
+  <loc>https://troejborgbryg.thomine.dk/</loc>
+  <lastmod>2023-12-19T16:25:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://troejborgbryg.thomine.dk/index.html</loc>
+  <lastmod>2023-12-19T16:25:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://troejborgbryg.thomine.dk/troejborgfri.html</loc>
+  <lastmod>2023-12-19T16:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://troejborgbryg.thomine.dk/inspiration.html</loc>
+  <lastmod>2023-12-19T16:25:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://troejborgbryg.thomine.dk/om.html</loc>
+  <lastmod>2023-12-19T16:25:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
